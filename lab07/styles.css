@@ -1,0 +1,11 @@
+h1 , h2 {color: #2A4439;}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.3em;}
+
+.evenrow {background-color: #2A4439;} 
+
+
+body {background-color: #E2E8E4;
+    /* background can be entire page or just one smaller element */
+}
