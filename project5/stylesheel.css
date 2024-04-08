@@ -1,0 +1,197 @@
+
+
+/* ############################################################## */
+/* for body*/
+body {background-color: #E2E8E4;
+    /* background can be entire page or just one smaller element */
+}
+/* ############################################################## */
+/* navigation bar */
+
+.container {width: 80%;
+    margin: 0 auto;
+}
+
+nav {background-color: #00203F;
+    padding: 10px;
+    margin-bottom:30px ;
+    
+}
+
+nav {
+    float: right;
+    width: 100%;
+}
+
+
+nav a:hover {background-color:#e6e6e648;}
+
+header{ background-color: #00203F;}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 2em;
+    padding-top: 1em;
+
+    position: relative;
+
+}
+
+nav a {
+    color: #CABE8E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #CABE8E;
+
+    position:absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+
+
+/* ############################################################## */
+/* for main*/
+
+
+.hero h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 3em;}   
+
+.hero p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        font-size: 1.5em;}  
+
+.silk{
+    text-align: center;
+    justify-content: center;}
+
+.legacy {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.legacy img {
+    height: 10%;
+    width: 10%;
+    flex: 1;
+}
+
+.showcase{display: flex;}
+
+
+.legacy h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;}  
+
+
+
+/* ############################################################## */
+/* for logo*/
+.logo {float: left;
+    justify-content: space-around;
+    max-width: 100%;
+    height: 10;}
+/* ############################################################## */
+/* for media*/
+@media only screen and (max-width: 600px) {
+    nav a {
+      display: block;
+      width: 100%;
+      margin: 5px 0; /* Adds vertical spacing between links */
+    }
+    nav span {
+      display: none; /* Hides the pipe characters */
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        margin: 10px 0; /* Adjust margins for mobile */
+    }
+}
+/* ############################################################## */
+
+
+
+
+
+/* for footer*/
+footer {
+    background-color: #00203F; /* Dark background for the footer */
+    color:#CABE8E; /* Light text for readability */
+    padding: 20px 0; /* Padding around the footer content */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px; /* Max width for the footer content */
+    margin: auto; /* Center the footer container */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px; /* Minimum width for each section */
+    margin: 10px; /* Margin around sections */
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the headings */
+}
+
+.footer-section p {
+    font-size: 0.9em; /* Smaller font size for the footer */
+    line-height: 1.6; /* Space between lines */
+}
+
+/* Style for social media links */
+.footer-section .social p {
+    /* Assuming you will have a list of social media icons */
+    display: flex;
+    align-items: center;
+}
+
+/* ############################################################## */
+
