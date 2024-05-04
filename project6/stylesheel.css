@@ -276,7 +276,9 @@ footer {
     box-shadow: 0 0 0 3px rgba(202, 190, 142, 0.75); /* Custom focus style that matches your color scheme */
 }
 
-
+.footer-section ul li {
+    margin-bottom: 10px; /* Adds vertical space below each list item */
+}
 
 /* ############################################################## */
 
