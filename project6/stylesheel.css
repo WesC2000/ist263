@@ -151,35 +151,35 @@ hr {border-top: 2px solid black;}
 
     article {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #333; /* Dark text for readability against a light background */
+        color: #333; 
         padding: 20px;
         margin: 20px auto;
-        max-width: auto; /* Ensures the content is not too wide on larger screens */
-        background-color: #f4f4f477; /* Light background to differentiate the section from the footer */
-        border-radius: 10px; /* Optional: adds rounded corners for a softer look */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        text-align: left; /* Aligns text to the left, which is standard for article text */
+        max-width: auto; 
+        background-color: #f4f4f477; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        text-align: left; 
     }
     
     article h3 {
-        color: #00203F; /* Matches the dark blue theme */
+        color: #00203F;
         font-size: 1.8em;
         margin-bottom: 10px;
     }
     
     article p {
         font-size: 1em;
-        line-height: 1.8; /* Increased line height for easier reading */
-        margin-bottom: 20px; /* Space between paragraphs */
+        line-height: 1.8; 
+        margin-bottom: 20px;
     }
     
     article ul {
-        padding-left: 20px; /* Proper indentation for lists */
-        list-style-type: disc; /* Uses discs for list bullets */
+        padding-left: 20px; 
+        list-style-type: disc; 
     }
     
     article li {
-        margin-bottom: 10px; /* Space between list items */
+        margin-bottom: 10px; 
     }
     
 
@@ -201,73 +201,79 @@ hr {border-top: 2px solid black;}
     }
 
     nav a {
-        display: block; /* Each link takes the full width of its container */
-        width: 100%; /* Maximizes the clickable area, easier for touch */
-        margin: 5px 0; /* Adds vertical spacing between links */
-        padding: 10px 0; /* Increases padding for better tapability */
+        display: block; 
+        width: 100%; 
+        margin: 5px 0;
+        padding: 10px 0; 
     }
 
     nav ul {
-        padding: 0; /* Removes padding */
+        padding: 0; 
     }
 
     nav li {
-        display: block; /* Stacks the list items */
-        margin: 0; /* Removes margin to fit better in smaller screens */
+        display: block; 
+        margin: 0; 
     }
 
     nav span {
-        display: none; /* Hides elements not needed on mobile, such as separators */
+        display: none; 
     }
 
     .footer-container {
-        flex-direction: column; /* Stacks footer sections vertically */
-        align-items: center; /* Centers content within each footer section */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer-section {
-        margin: 10px 0; /* Adds consistent margin around each footer section */
-        text-align: center; /* Centers the text in the footer on small screens */
+        margin: 10px 0; 
+        text-align: center; 
     }
 
     /* Adjusts images within the main content area to be more responsive */
     main img, .showcase img, .insights img {
-        width: 100%; /* Allows images to scale based on the width of their container */
-        height: auto; /* Maintains aspect ratio as the image scales */
-        max-width: 100%; /* Ensures no image exceeds the width of its container */
-        margin: 0 auto; /* Centers images horizontally */
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+        margin: 0 auto; 
     }
 
     .showcase figure, .insights figure {
-        margin: 10px 0; /* Adjusts margin for a more compact layout */
+        margin: 10px 0; 
     }
 
     .showcase figcaption, .insights figcaption {
-        font-size: 0.9em; /* Adjusts font size for smaller screens */
+        font-size: 0.9em; 
     }
 
     .sidebar {
-        width: 100%; /* Sidebar takes full width on small screens */
-        position: relative; /* Changes position from fixed for better flow */
-        height: auto; /* Adjusts height to content */
-        padding: 10px; /* Reduces padding */
+        width: 100%; 
+        position: relative; 
+        height: auto;
+        padding: 10px; 
     }
 
     .silk img {
-        width: 100%; /* Adjusts silk images for mobile screens */
+        width: 100%; 
     }
 
     .legacy, .hero {
-        padding: 5px; /* Reduces padding to fit mobile screens */
-        text-align: center; /* Ensures text is centered */
+        padding: 5px; 
+        text-align: center;
     }
 
     .legacy h2, .hero h1 {
-        font-size: 2em; /* Reduces the font size to fit smaller screens */
+        font-size: 2em;
     }
 
     main p {
-        font-size: 100%; /* Adjusts paragraph text size for better readability on mobile */
+        font-size: 100%; 
+    }
+
+    .showcase img {
+        width: 50%;  
+        height: auto;  
+        margin-bottom: 10px;  
     }
 }
 
@@ -281,21 +287,21 @@ hr {border-top: 2px solid black;}
 footer {
     background-color: #00203F; /* Dark background for the footer */
     color:#CABE8E; /* Light text for readability */
-    padding: 20px 0; /* Padding around the footer content */
+    padding: 20px 0; 
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px; /* Max width for the footer content */
-    margin: auto; /* Center the footer container */
+    max-width: 1200px; 
+    margin: auto; 
 }
 
 .footer-section {
     flex: 1;
-    min-width: 150px; /* Minimum width for each section */
-    margin: 10px; /* Margin around sections */
+    min-width: 150px; 
+    margin: 10px; 
 }
 
 .footer-section h3 {
@@ -304,8 +310,8 @@ footer {
 }
 
 .footer-section p { 
-    font-size: 0.9em; /* Smaller font size for the footer */
-    line-height: 1.6; /* Space between lines */
+    font-size: 0.9em; 
+    line-height: 1.6; 
 }
 
 /* Style for social media links */
@@ -316,25 +322,25 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #CABE8E; /* Link color to match your footer styling */
+    color: #CABE8E; 
     text-decoration: none; /* Removes underline from links */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .footer-section ul li a:hover, .footer-section ul li a:focus {
-    color: #FFF; /* Lighter color on hover for better visibility */
-    transform: translateY(-2px); /* Slightly raise the link to indicate it's clickable */
-    cursor: pointer; /* Changes the cursor to a pointer to indicate a clickable link */
+    color: #FFF; 
+    transform: translateY(-2px); 
+    cursor: pointer; 
     background-color:#e6e6e648;
 }
 
 .footer-section ul li a:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 0 3px rgba(202, 190, 142, 0.75); /* Custom focus style that matches your color scheme */
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(202, 190, 142, 0.75); 
 }
 
 .footer-section ul li {
-    margin-bottom: 10px; /* Adds vertical space below each list item */
+    margin-bottom: 10px; 
 }
 
 /* ############################################################## */
