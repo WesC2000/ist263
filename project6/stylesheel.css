@@ -194,26 +194,83 @@ hr {border-top: 2px solid black;}
 /* ############################################################## */
 /* for media*/
 @media only screen and (max-width: 600px) {
-    nav a {
-      display: block;
-      width: 100%;
-      margin: 5px 0; /* Adds vertical spacing between links */
+    /* Adjusts navigation links for smaller screens */
+    nav {
+        float: none; /* Removes floating to stack navigation properly */
+        text-align: center; /* Centers navigation items */
     }
+
+    nav a {
+        display: block; /* Each link takes the full width of its container */
+        width: 100%; /* Maximizes the clickable area, easier for touch */
+        margin: 5px 0; /* Adds vertical spacing between links */
+        padding: 10px 0; /* Increases padding for better tapability */
+    }
+
+    nav ul {
+        padding: 0; /* Removes padding */
+    }
+
+    nav li {
+        display: block; /* Stacks the list items */
+        margin: 0; /* Removes margin to fit better in smaller screens */
+    }
+
     nav span {
-      display: none; /* Hides the pipe characters */
+        display: none; /* Hides elements not needed on mobile, such as separators */
     }
 
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-section {
-        margin: 10px 0; /* Adjust margins for mobile */
+        flex-direction: column; /* Stacks footer sections vertically */
+        align-items: center; /* Centers content within each footer section */
     }
 
-    main img {width: auto;
-    height: auto;}
+    .footer-section {
+        margin: 10px 0; /* Adds consistent margin around each footer section */
+        text-align: center; /* Centers the text in the footer on small screens */
+    }
+
+    /* Adjusts images within the main content area to be more responsive */
+    main img, .showcase img, .insights img {
+        width: 100%; /* Allows images to scale based on the width of their container */
+        height: auto; /* Maintains aspect ratio as the image scales */
+        max-width: 100%; /* Ensures no image exceeds the width of its container */
+        margin: 0 auto; /* Centers images horizontally */
+    }
+
+    .showcase figure, .insights figure {
+        margin: 10px 0; /* Adjusts margin for a more compact layout */
+    }
+
+    .showcase figcaption, .insights figcaption {
+        font-size: 0.9em; /* Adjusts font size for smaller screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes full width on small screens */
+        position: relative; /* Changes position from fixed for better flow */
+        height: auto; /* Adjusts height to content */
+        padding: 10px; /* Reduces padding */
+    }
+
+    .silk img {
+        width: 100%; /* Adjusts silk images for mobile screens */
+    }
+
+    .legacy, .hero {
+        padding: 5px; /* Reduces padding to fit mobile screens */
+        text-align: center; /* Ensures text is centered */
+    }
+
+    .legacy h2, .hero h1 {
+        font-size: 2em; /* Reduces the font size to fit smaller screens */
+    }
+
+    main p {
+        font-size: 100%; /* Adjusts paragraph text size for better readability on mobile */
+    }
 }
+
 /* ############################################################## */
 
 
