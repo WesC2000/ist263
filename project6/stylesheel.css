@@ -10,6 +10,7 @@ body {background-color: #E2E8E4;
 
 .container {width: 80%;
     margin: 0 auto;
+    font-family: "Lato", sans-serif;
 }
 
 nav {background-color: #00203F;
@@ -24,7 +25,12 @@ nav {
 }
 
 
-nav a:hover {background-color:#e6e6e648;}
+nav a:hover {
+    background-color:#e6e6e648;
+    color: #FFF; /* Lighter color on hover for better visibility */
+    transform: translateY(-2px); /* Slightly raise the link to indicate it's clickable */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate a clickable link */
+}
 
 header{ background-color: #00203F;}
 
@@ -81,14 +87,17 @@ nav a:hover::before{
 /* ############################################################## */
 /* for main*/
 
+hr {border-top: 2px solid black;}
 
 .hero h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Old Standard TT", serif;
+    color: #00203F;
     text-align: center;
-    font-size: 3em;}   
+    font-size: 4em;}   
 
 .hero p{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #00203F;
         text-align: center;
         font-size: 1.5em;}  
 
@@ -98,22 +107,29 @@ nav a:hover::before{
 
 .legacy {
     display: inline-block;
-    width: auto;
+    color: #00203F;
+    width: 116.5em;
     height: auto;
-    padding: 5px;
-    border: 1px solid black;
-    margin-right:auto;
-    margin-left:auto;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px auto;
+    text-align: center;
 }
 
-.legacy img {
-    height: 10%;
-    width: 10%;
-    flex: 1;
+
+.showcase{display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center; /* Center images horizontally */
+    margin: 20px; /* Apply margin to the section */
 }
 
-.showcase{display: flex;}
-
+.showcase img {
+    width: 440px; /* Adjust the width as needed */
+    height: 440px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image fills the designated space */
+    margin: 5px; /* Add some margin between images */
+    display: block;
+}
 
 .legacy h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -122,12 +138,59 @@ nav a:hover::before{
 
 
 
+
+
+
+
+
+/* ############################################################## */
+/* for article*/
+
+
+
+
+    article {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #333; /* Dark text for readability against a light background */
+        padding: 20px;
+        margin: 20px auto;
+        max-width: auto; /* Ensures the content is not too wide on larger screens */
+        background-color: #f4f4f477; /* Light background to differentiate the section from the footer */
+        border-radius: 10px; /* Optional: adds rounded corners for a softer look */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        text-align: left; /* Aligns text to the left, which is standard for article text */
+    }
+    
+    article h3 {
+        color: #00203F; /* Matches the dark blue theme */
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    
+    article p {
+        font-size: 1em;
+        line-height: 1.8; /* Increased line height for easier reading */
+        margin-bottom: 20px; /* Space between paragraphs */
+    }
+    
+    article ul {
+        padding-left: 20px; /* Proper indentation for lists */
+        list-style-type: disc; /* Uses discs for list bullets */
+    }
+    
+    article li {
+        margin-bottom: 10px; /* Space between list items */
+    }
+    
+
+
 /* ############################################################## */
 /* for logo*/
 .logo {float: left;
     justify-content: space-around;
     max-width: 100%;
     height: 10;}
+
 /* ############################################################## */
 /* for media*/
 @media only screen and (max-width: 600px) {
@@ -183,7 +246,7 @@ footer {
     margin-bottom: 10px; /* Space below the headings */
 }
 
-.footer-section p {
+.footer-section p { 
     font-size: 0.9em; /* Smaller font size for the footer */
     line-height: 1.6; /* Space between lines */
 }
@@ -194,6 +257,26 @@ footer {
     display: flex;
     align-items: center;
 }
+
+.footer-section ul li a {
+    color: #CABE8E; /* Link color to match your footer styling */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-section ul li a:hover, .footer-section ul li a:focus {
+    color: #FFF; /* Lighter color on hover for better visibility */
+    transform: translateY(-2px); /* Slightly raise the link to indicate it's clickable */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate a clickable link */
+    background-color:#e6e6e648;
+}
+
+.footer-section ul li a:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(202, 190, 142, 0.75); /* Custom focus style that matches your color scheme */
+}
+
+
 
 /* ############################################################## */
 
